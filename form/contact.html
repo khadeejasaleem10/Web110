@@ -1,0 +1,74 @@
+<!-- khadeeja saleem 16 April 2026 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!--Insert the JCCC log images from the Canvas module here -->
+            <img src="logo.jpg" alt="jccc logo">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below.</p>
+        </header>
+        <main>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="fname" required maxlength="30">
+            <!--Create a label for a first name and a text input element here --make it required and a max length of "30" -->
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lname" required maxlength="30">
+         <!--Create a label for a last name and a text input element here --make it required and a max length of "30" -->
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        <!--Create a label for an email input element here and make it required -->
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+           <!--Create a label and phone input element here and make it required and have this as a placeholder-- placeholder="123-456-7890" -->
+        </div>
+
+        <div class="form-group">
+            <label for="learnMore">What would you like to know more about?</label>
+            <textarea id="learnMore" name="learnMore" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>How would you prefer we contact you?</label>
+            <div class="contact-options">
+                <input type="radio" id="contactEmail" name="contactPreference" value="email" required>
+                <label for="contactEmail">Email</label>
+                <input type="radio" id="contactPhone" name="contactPreference" value="phone">
+                <label for="contactPhone">Phone</label>
+                <input type="radio" id="noPreference" name="contactPreference" value="no_preference">
+                <label for="noPreference">No Preference</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+        </form>
+
+        </main>
+        <footer>
+         <p>&copy; 2025 Khadeeja Saleem. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
